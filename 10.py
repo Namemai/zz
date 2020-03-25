@@ -4552,11 +4552,7 @@ def bot(op):
                             del Setmain["SKfoto"][g1MID]
                             g1.updateProfilePicture(path)
                             g1.sendMessage(msg.to,"Foto berhasil dirubah")
-                        elif g2MID in Setmain["SKfoto"]:
-                            path = g2.downloadObjectMsg(msg_id)
-                            del Setmain["SKfoto"][g2MID]
-                            g2.updateProfilePicture(path)
-                            g2.sendMessage(msg.to,"Foto berhasil dirubah")
+
                             
                if msg.contentType == 1:
                  if msg._from in admin:
