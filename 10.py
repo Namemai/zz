@@ -5888,7 +5888,6 @@ def bot(op):
                                 k9.sendMessage(msg.to,responsename9)
                                 k10.sendMessage(msg.to,responsename10)
                                 
-                                             
                         elif cmd == "in":
                          if msg._from in admin:
                            if msg.toType == 2:
@@ -5898,26 +5897,25 @@ def bot(op):
                                invsend = 0                        
                                ticket = cl.reissueGroupTicket(to)
                                k1.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                               time.sleep(0.008)
+                               time.sleep(0.01)
                                k2.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                               time.sleep(0.008)
+                               time.sleep(0.01)
                                k3.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                               time.sleep(0.008)
+                               time.sleep(0.01)
                                k4.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                               time.sleep(0.008)
+                               time.sleep(0.01)
                                k5.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                               time.sleep(0.008)
+                               time.sleep(0.01)
                                k6.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                               time.sleep(0.008)
+                               time.sleep(0.01)
                                k7.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                               time.sleep(0.008)
+                               time.sleep(0.01)
                                k8.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                               time.sleep(0.008)
+                               time.sleep(0.01)
                                k9.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                               time.sleep(0.008)
+                               time.sleep(0.01)
                                k10.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                               time.sleep(0.008)
-                               k10.sendMessage(msg.to, "พร้อมคุ้มกันเจ้านายค่ะ"
+                               time.sleep(0.01)                               
                         
                         elif cmd == "ดึงคิก":
                           if wait["selfbot"] == True:
@@ -5936,7 +5934,7 @@ def bot(op):
                                     k9.acceptGroupInvitation(msg.to)
                                     k10.acceptGroupInvitation(msg.to)
                                 except:
-                                    pass       
+                                    pass      
                                
                         elif cmd == "bb":
                           if wait["selfbot"] == True:
