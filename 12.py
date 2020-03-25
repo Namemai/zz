@@ -22,61 +22,60 @@ print("""
 \033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Start Bot ]\033[0m    
 """%(Bot_startTime))
 #==============================================================
-cl = LINE("")
+cl = LINE('EPHBYYIzIjfugMkd0HD5.XM5fib0weUTm57oOA6XgHq.tL1PwEcI2w9XxV9anAfZ910upIx9ZWZmHzCEqzfNpEE=')
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Selfbot Login ]\033[0m"""%(Bot_startTime))
 
-k1 = LINE("")
+k1 = LINE('EPfgg0Orb9s0b2FKga5d.OOGBDbk28/vRvRBltcdSxq.Pk8mEyNx1A10bxhVWGKxEdVitVT4qf5taGLE96FGcJk=')
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist1 Login ]\033[0m"""%(Bot_startTime))
 
-k2 = LINE("")
+k2 = LINE('EPs77MC63bLuKJ3lWLT5.X6Ct4bnONi5o6d0PILEMDq.hvInZT83Fk4ZwkXITrrbXKqGfFC9+i5hdC+2gGBQSnQ=')
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist2 Login ]\033[0m"""%(Bot_startTime))
 
-k3 = LINE("")
+k3 = LINE('EP1cLaynuY66Oy7t11E9.c88JeXWtK6LfwQarKQ7kYq.afRSX6UUfQqksMqxMAfraGaRRNdO2srNC7z01yfxLXA=')
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist3 Login ]\033[0m"""%(Bot_startTime))
 
-k4 = LINE("")
+k4 = LINE('EPHkx5EbkKMIPYJYf7Sb.IoSi0TuHWIuxhA7TCMyEoW.VtiaDMVSK8urvYK4W1t4U5rz2zeHdbCNC600M/K1MUQ=')
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist4 Login ]\033[0m"""%(Bot_startTime))
 
-k5 = LINE("")
+k5 = LINE('EPbC2aRyy7XmjkFuD9r7.nn0F//4QfQClWgy2xQhqnW.g4wXOnApt/F8+e6DbGtWsEph6hpK2V+31Z4NymUWLmU=')
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist5 Login ]\033[0m"""%(Bot_startTime))
 
-k6 = LINE("")
+k6 = LINE('EPlUzSQIgFjTfb9412G6.LbiDKw6nTsgX13+RA2+hbG.bFr9wDpmlmePxrDzlJC3C8afAG/bm7XDA5G1xexqCc8=')
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist6 Login ]\033[0m"""%(Bot_startTime))
 
-k7 = LINE("")
+k7 = LINE('EPmFD09f9lffElgkd0V2.Uevc0HosgitnUe6+0yTc0G.EArLQTmfIuRa0Bs9Aybz6+sEG9Me4lxytmdtxofQjKs=')
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist7 Login ]\033[0m"""%(Bot_startTime))
 
-k8 = LINE("")
+k8 = LINE('EPgGll3O5JsjWtyqCBW0.ssy5gMItRl1nn0PfsSte0a.Iltw5w6EQm3kUqSS0hsKTORrpmXwQhcecBN3S7PlNo8=')
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist8 Login ]\033[0m"""%(Bot_startTime))
 
-k9 = LINE("")
+k9 = LINE('EPInb6SlSnLHCGUlYoi1.Gz4Hx8fl4eosC+5oOj+TKq.PPB3xzVclPy4VyFcRy2YKBhn8kopH1k/eIqZYpBFEn8=')
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist9 Login ]\033[0m"""%(Bot_startTime))
 
-k10 = LINE("")
+k10 = LINE('EP7tydh5tLo3SM1vu3e1.JdIar/QwMqsW8hkkjEDTeq.hnTKKCIHM7H7tlIKNiBD7Ji8vCxePzc0F9HLysoCGgA=')
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist10 Login ]\033[0m"""%(Bot_startTime))
 
-g1 = LINE("")
+g1 = LINE('EPxumgd5B7M2ngTPdGK0.r6/EQbQQMDLKMVgz2SKcya.9G1IxtafY/FKjBD8A5Wa6ySFEBVMMSdBJe2c08AQgwM=')
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Kicker1 Login ]\033[0m"""%(Bot_startTime))
 
-g2 = LINE("")
+g2 = LINE('EPvzSEqjymbeEgllC6n2.sg9Izcl+/YM4kMsM/KGxuG.dQYi4djtlcjyI4vSBCT4C40XHHpcqjWmA22rqdBhHag=')
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Kicker2 Login ]\033[0m"""%(Bot_startTime))
 #==========================[[PAKE TOKEN CHROMEOS 2.1.5]]=========================
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m
 
-	    Welcome To Self Bot Protect  By Dhenza15
+	    Welcome To Self Bot Protect  By mai
 
             
 Login Time %s \033[0m\n\n"""%(Bot_startTime))
 #==============================================================================
 oepoll = OEPoll(cl)
 call = cl
-creator = ["ub1c5a71f27b863896e9d44bea857d35b","ufdc20b3a00b5e8f31e4f91017eb361b0"]
-owner = ["ub1c5a71f27b863896e9d44bea857d35b","ufdc20b3a00b5e8f31e4f91017eb361b0"]
-admin = ["ub1c5a71f27b863896e9d44bea857d35b","ufdc20b3a00b5e8f31e4f91017eb361b0"]
-staff = ["ufdc20b3a00b5e8f31e4f91017eb361b0"]
+creator = ["uc66e45201d1612eb4ce7b3a86bac4685"]
+owner = ["uc66e45201d1612eb4ce7b3a86bac4685"]
+admin = ["uc66e45201d1612eb4ce7b3a86bac4685"]
+staff = ["uc66e45201d1612eb4ce7b3a86bac4685"]
 #==============================================================================
 lineProfile = cl.getProfile()
-mid = cl.getProfile().mid
 mid = cl.getProfile().mid
 Amid = k1.getProfile().mid
 Bmid = k2.getProfile().mid
