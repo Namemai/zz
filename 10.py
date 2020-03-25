@@ -2029,7 +2029,7 @@ def bot(op):
                                                         except: 
                                                             try:
                                                                 k10.kickoutFromGroup(op.param1,[op.param2])
-								time.sleep(0.008)
+                                                                time.sleep(0.008)
                                                                 k10.inviteIntoGroup(op.param1,[op.param3])
                                                                 cl.acceptGroupInvitation(op.param1)
                                                             except:
