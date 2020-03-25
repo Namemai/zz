@@ -5889,7 +5889,7 @@ def bot(op):
                                 k10.sendMessage(msg.to,responsename10)
                                 
                                              
-                       elif cmd == "in":
+                      elif cmd == "in":
                          if msg._from in admin:
                            if msg.toType == 2:
                                group = cl.getGroup(to)
