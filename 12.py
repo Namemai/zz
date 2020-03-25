@@ -3519,11 +3519,12 @@ def bot(op):
                                                                 k8.inviteIntoGroup(op.param1,[op.param3])
                                                                 k7.acceptGroupInvitation(op.param1)
                                                             except:
-                                                                   k9.kickoutFromGroup(op.param1,[op.param2])
-                                                                   k9.inviteIntoGroup(op.param1,[op.param3])
-                                                                   k8.acceptGroupInvitation(op.param1)
-                                                               except:
-                                                                   pass
+                                                                try:
+                                                                    k9.kickoutFromGroup(op.param1,[op.param2])
+                                                                    k9.inviteIntoGroup(op.param1,[op.param3])
+                                                                    k8.acceptGroupInvitation(op.param1)
+                                                                except:
+                                                                    pass
                                                             
                 return
             if Imid in op.param3:
@@ -3701,7 +3702,7 @@ def bot(op):
                                                             X.preventedJoinByTicket = True
                                                             random.choice(ABC).updateGroup(X) 
                                                         except:
-                                                    
+                                                            try:
                                                                 k9.kickoutFromGroup(op.param1,[op.param2])
                                                                 k9.inviteIntoGroup(op.param1,[op.param3])
                                                                 k8.acceptGroupInvitation(op.param1)
