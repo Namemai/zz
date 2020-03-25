@@ -266,7 +266,7 @@ wait = {
             "pictureStatus": "",
             "statusMessage": ""
             },
-    "mention":"Masuk say ngitip bacok",
+    "mention":"กรุนารอผมมาปลอดบล็อค",
     "Respontag":"Cuy ngrtag mele..",
     "welcome":"Wellcome to my Fams",
     "comment":"ᴀᴜᴛᴏʟɪᴋᴇ ʙʏ:Mai",
@@ -537,7 +537,7 @@ def backupProfile():
 def mentionMembers(to, mid):
     try:
         arrData = ""
-        textx = "✏DAFTAR JONES「{}」\n\n╔━━━━[ SILENT KILLER ]━━━\n╠❂➣✏1. ".format(str(len(mid)))
+        textx = "✏DAFTAR JONES「{}」\n\n╔━━━━[ ... ]━━━\n╠❂➣✏1. ".format(str(len(mid)))
         arr = []
         no = 1
         num = 2
@@ -699,48 +699,48 @@ def help():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage = "╭━━━━━━━━━━━━━━━\n"
-    helpMessage += "│┃ " + "╭──⍟ᴛᴇᴀᴍ ʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ⍟─\n"
-    helpMessage += "│┃" + " ├───༼ᴍᴇɴᴜ ʙᴏᴛ sɪʟᴇɴᴛ༽────────────────\n"
+    helpMessage += "│┃ " + "╭──⍟  ᴘʀᴏᴛᴇᴄᴛ ⍟─\n"
+    helpMessage += "│┃" + " ├───༼ ᴍᴇɴᴜ ʙᴏᴛ ༽────────────────\n"
     helpMessage += "│┃" + " ├──────────────\n"
-    helpMessage += "│╠❂➣ %i. " % num + key + "ᴍᴇ\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "มี\n"
     num = (num+1)
     helpMessage += "│╠❂➣ %i. " % num + key + "sᴘ\n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i. " % num + key + "ᴋᴇᴘᴏ @\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "ᴋ @ vk @ \n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i. " % num + key + "ᴍʏʙᴏᴛ\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "เปิดมุลิ้ง\n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i. " % num + key + "ɴᴀᴍᴇ\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "ปิดมุดลิ้ง\n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i. " % num + key + "ᴍᴀsᴜᴋ\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "เปิดลิ้ง\n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i. " % num + key + "ᴘᴜʟᴀɴɢ\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "ปิดลิ้ง\n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i. " % num + key + "ᴜᴘʙᴏᴛ\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "รื\n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i. " % num + key + "ɢᴇᴛᴍɪᴅ @\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "in\n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i. " % num + key + "ᴀʙᴏᴜᴛ\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "out\n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i. " % num + key + "ᴛɪᴍᴇ\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "b / bb\n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i. " % num + key + "ᴄʀᴇᴀᴛᴏʀ\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "ผี on/ผี off\n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i. " % num + key + "ɢʟɪsᴛ\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "js on/off\n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i. " % num + key + "ᴏᴘᴇɴ\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "addbot\n"
     num = (num+1)    
-    helpMessage += "│╠❂➣ %i. " % num + key + "ᴏᴜʀʟ\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "ck\n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i ." % num + key + "ᴄᴜʀʟ\n"
+    helpMessage += "│╠❂➣ %i ." % num + key + "ดึง @\n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i. " % num + key + "ɢʀᴜᴘɪɴғᴏ ɴᴏ\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "ดึงคิก\n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i. " % num + key + "sᴛᴀғғʟɪsᴛ\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "set/setk\n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i. " % num + key + "ʙᴏᴛʟɪsᴛ\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "ชื่อบอท\n"
     num = (num+1)
-    helpMessage += "│╠❂➣ %i. " % num + key + "ʜᴀᴘᴜsᴄʜᴀᴛ\n"
+    helpMessage += "│╠❂➣ %i. " % num + key + "ไลค์ on/off\n"
     num = (num+1)
     helpMessage += "│╠❂➣ %i. " % num + key + "sɪᴅᴇʀ ᴏɴ[ᴏғғ]\n"
     num = (num+1)
@@ -835,9 +835,9 @@ def help():
     helpMessage += "│╠❂➣ %i. " % num + key + "ʟɪsᴛᴀᴜᴅɪᴏ •ᴋᴀᴛᴀ•\n"
     num = (num+1)    
     helpMessage += "│┃ " + "├──────────────\n"
-    helpMessage += "│┃ " + "╰──⍟ ᴛᴇᴀᴍ ʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ ⍟─────────\n"
+    helpMessage += "│┃ " + "╰──⍟ ᴘʀᴏᴛᴇᴄᴛ ⍟─────────\n"
     helpMessage += "╰━━━━━━━━━━━━━━━━"
-    helpMessage += " Creator: https://line.me/ti/p/~teambotprotect \n"
+    helpMessage += " Creator: https://line.me/ti/p/~mai06555mai \n"
     return helpMessage
 
 def helpbot():
@@ -845,8 +845,8 @@ def helpbot():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage2 = "╭━━━━━━━━━━━━━━━━\n"
-    helpMessage2 += "│┃ " + "╭───⍟ᴛᴇᴀᴍ ʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ⍟─\n"
-    helpMessage2 += "│┃" + " ├───༼ᴄᴏᴍᴍᴀɴᴅ ᴋɪᴄᴋᴇʀ༽────────────\n"
+    helpMessage2 += "│┃ " + "╭───⍟ᴘʀᴏᴛᴇᴄᴛ⍟─\n"
+    helpMessage2 += "│┃" + " ├───༼ ᴋɪᴄᴋᴇʀ ༽────────────\n"
     helpMessage2 += "│┃" + " ├──────────────\n"
     helpMessage2 += "│╠❂➣ %i. " % num + key + "ᴋɪᴄᴋᴇʀ @\n"
     num = (num+1)
@@ -969,7 +969,7 @@ def helpbot():
     helpMessage2 += "│┃ " + "├──────────────\n"
     helpMessage2 += "│┃ " + "╰──⍟ ᴛᴇᴀᴍ ʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ ⍟────────\n"
     helpMessage2 += "╰━━━━━━━━━━━━━━━━"
-    helpMessage2 += " My ID LINE : 〘 https://line.me/ti/p/~teambotprotect 〙\n"
+    helpMessage2 += " My ID LINE : 〘 https://line.me/ti/p/~mai06555mai 〙\n"
     return helpMessage2
 
 def bot(op):
