@@ -1950,7 +1950,7 @@ def bot(op):
                         json.dump(bl, fp, sort_keys=True, indent=4)
                     try:                  	
                         k1.kickoutFromGroup(op.param1,[op.param2])
-			time.sleep(0.008)
+                        time.sleep(0.008)
                         k1.inviteIntoGroup(op.param1,[op.param3])
                         cl.acceptGroupInvitation(op.param1)
                     except:
@@ -1962,7 +1962,7 @@ def bot(op):
                         except:
                             try:
                                 k3.kickoutFromGroup(op.param1,[op.param2])
-				time.sleep(0.008)
+                                time.sleep(0.008)
                                 k3.inviteIntoGroup(op.param1,[op.param3])
                                 cl.acceptGroupInvitation(op.param1)
                             except:
@@ -1974,7 +1974,7 @@ def bot(op):
                                 except:
                                     try:
                                         k5.kickoutFromGroup(op.param1,[op.param2])
-					time.sleep(0.008)
+                                        time.sleep(0.008)
                                         k5.inviteIntoGroup(op.param1,[op.param3])
                                         cl.acceptGroupInvitation(op.param1)
                                     except:
@@ -1986,7 +1986,7 @@ def bot(op):
                                         except:
                                             try:
                                                 k7.kickoutFromGroup(op.param1,[op.param2])
-						time.sleep(0.008)
+                                                time.sleep(0.008)
                                                 k7.inviteIntoGroup(op.param1,[op.param3])
                                                 cl.acceptGroupInvitation(op.param1)
                                             except:
@@ -1998,7 +1998,7 @@ def bot(op):
                                                 except:
                                                     try:
                                                         k9.kickoutFromGroup(op.param1,[op.param2])
-						        time.sleep(0.008)
+                                                        time.sleep(0.008)
                                                         k9.inviteIntoGroup(op.param1,[op.param3])
                                                         cl.acceptGroupInvitation(op.param1)
                                                     except:
