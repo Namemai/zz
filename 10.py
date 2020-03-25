@@ -22,44 +22,42 @@ print("""
 \033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Start Bot ]\033[0m    
 """%(Bot_startTime))
 #==============================================================
-cl = LINE('EPHBYYIzIjfugMkd0HD5.XM5fib0weUTm57oOA6XgHq.tL1PwEcI2w9XxV9anAfZ910upIx9ZWZmHzCEqzfNpEE=')
+cl = LINE("06555mai@gmail.com","mai06555mai")
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Selfbot Login ]\033[0m"""%(Bot_startTime))
 
-k1 = LINE('EPfgg0Orb9s0b2FKga5d.OOGBDbk28/vRvRBltcdSxq.Pk8mEyNx1A10bxhVWGKxEdVitVT4qf5taGLE96FGcJk=')
+k1 = LINE("eor68399@eoopy.com","mai06555mai")
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist1 Login ]\033[0m"""%(Bot_startTime))
 
-k2 = LINE('EPs77MC63bLuKJ3lWLT5.X6Ct4bnONi5o6d0PILEMDq.hvInZT83Fk4ZwkXITrrbXKqGfFC9+i5hdC+2gGBQSnQ=')
+k2 = LINE("ngh81593@bcaoo.com","mai06555mai")
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist2 Login ]\033[0m"""%(Bot_startTime))
 
-k3 = LINE('EP1cLaynuY66Oy7t11E9.c88JeXWtK6LfwQarKQ7kYq.afRSX6UUfQqksMqxMAfraGaRRNdO2srNC7z01yfxLXA=')
+k3 = LINE("rxa09671@eoopy.com","mai06555mai")
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist3 Login ]\033[0m"""%(Bot_startTime))
 
-k4 = LINE('EPHkx5EbkKMIPYJYf7Sb.IoSi0TuHWIuxhA7TCMyEoW.VtiaDMVSK8urvYK4W1t4U5rz2zeHdbCNC600M/K1MUQ=')
+k4 = LINE("zii43214@eoopy.com","mai06555mai")
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist4 Login ]\033[0m"""%(Bot_startTime))
 
-k5 = LINE('EPbC2aRyy7XmjkFuD9r7.nn0F//4QfQClWgy2xQhqnW.g4wXOnApt/F8+e6DbGtWsEph6hpK2V+31Z4NymUWLmU=')
+k5 = LINE("fjr17555@zzrgg.com","mai06555mai")
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist5 Login ]\033[0m"""%(Bot_startTime))
 
-k6 = LINE('EPlUzSQIgFjTfb9412G6.LbiDKw6nTsgX13+RA2+hbG.bFr9wDpmlmePxrDzlJC3C8afAG/bm7XDA5G1xexqCc8=')
+k6 = LINE("oiu99345@bcaoo.com","mai06555mai")
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist6 Login ]\033[0m"""%(Bot_startTime))
 
-k7 = LINE('EPmFD09f9lffElgkd0V2.Uevc0HosgitnUe6+0yTc0G.EArLQTmfIuRa0Bs9Aybz6+sEG9Me4lxytmdtxofQjKs=')
+k7 = LINE("bzf97835@bcaoo.com","mai06555mai")
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist7 Login ]\033[0m"""%(Bot_startTime))
 
-k8 = LINE('EPgGll3O5JsjWtyqCBW0.ssy5gMItRl1nn0PfsSte0a.Iltw5w6EQm3kUqSS0hsKTORrpmXwQhcecBN3S7PlNo8=')
+k8 = LINE("rye61111@bcaoo.com","mai06555mai")
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist8 Login ]\033[0m"""%(Bot_startTime))
 
-k9 = LINE('EPInb6SlSnLHCGUlYoi1.Gz4Hx8fl4eosC+5oOj+TKq.PPB3xzVclPy4VyFcRy2YKBhn8kopH1k/eIqZYpBFEn8=')
+k9 = LINE("piu45560@bcaoo.com","mai06555mai")
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist9 Login ]\033[0m"""%(Bot_startTime))
 
-k10 = LINE('EP7tydh5tLo3SM1vu3e1.JdIar/QwMqsW8hkkjEDTeq.hnTKKCIHM7H7tlIKNiBD7Ji8vCxePzc0F9HLysoCGgA=')
+k10 = LINE("ctc88352@bcaoo.com","mai06555mai")
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist10 Login ]\033[0m"""%(Bot_startTime))
 
-g1 = LINE('EPxumgd5B7M2ngTPdGK0.r6/EQbQQMDLKMVgz2SKcya.9G1IxtafY/FKjBD8A5Wa6ySFEBVMMSdBJe2c08AQgwM=')
+g1 = LINE("vgc03839@zzrgg.com","mai06555mai")
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Kicker1 Login ]\033[0m"""%(Bot_startTime))
 
-g2 = LINE('EPvzSEqjymbeEgllC6n2.sg9Izcl+/YM4kMsM/KGxuG.dQYi4djtlcjyI4vSBCT4C40XHHpcqjWmA22rqdBhHag=')
-print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Kicker2 Login ]\033[0m"""%(Bot_startTime))
 #==========================[[PAKE TOKEN CHROMEOS 2.1.5]]=========================
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m
 
@@ -87,12 +85,11 @@ Gmid = k7.getProfile().mid
 Hmid = k8.getProfile().mid
 Imid = k9.getProfile().mid
 Jmid = k10.getProfile().mid   
-g1MID = g1.getProfile().mid
-g2MID = g2.getProfile().mid                 
+g1MID = g1.getProfile().mid               
 KAC = [k1,k2,k3,k4,k5,k6,k7,k8,k9,k10]
 ABC = [k1,k2,k3,k4,k5,k6,k7,k8,k9,k10]
 KICKER = [g1,g2]           
-Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,g1MID,g2MID]
+Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid,Imid,Jmid,g1MID]
 Saint = admin + owner + staff
 Team = creator + owner + admin + staff + Bots
 Setbot = codecs.open("setting.json","r","utf-8")
