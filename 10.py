@@ -28,7 +28,7 @@ print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Selfbot
 k1 = LINE("vtp52567@zzrgg.com","mai06555mai")
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist1 Login ]\033[0m"""%(Bot_startTime))
 
-k2 = LINE("ngh81593@bcaoo.com","mai06555mai")
+k2 = LINE("mkk91568@zzrgg.com","mai06555mai")
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist2 Login ]\033[0m"""%(Bot_startTime))
 
 k3 = LINE("rxa09671@eoopy.com","mai06555mai")
