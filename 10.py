@@ -1716,14 +1716,12 @@ def bot(op):
             	            g1.inviteIntoGroup(op.param1,[op.param3])
             	        except:
             	            try:
-            	                g2.findAndAddContactsByMid(op.param3)
-            	                g2.inviteIntoGroup(op.param1,[op.param3])
+            	                g1.findAndAddContactsByMid(op.param3)
+            	                g1.inviteIntoGroup(op.param1,[op.param3])
             	            except:
             	                g1.sendMessage(op.param1,"Bl succes")
             	                g1.leaveGroup(op.param1)
-            	                g2.leaveGroup(op.param1)
             	        g1.leaveGroup(op.param1)
-            	        g2.leaveGroup(op.param1)
             	        X = cl.getGroup(op.param1)
             	        X.preventedJoinByTicket = True
             	        cl.updateGroup(X)
@@ -1735,8 +1733,7 @@ def bot(op):
                 if mid in op.param3:
                     if op.param2 not in Bots and op.param2 not in Saint and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
                         try:
-                            g1.acceptGroupInvitation(op.param1)   
-                            g2.acceptGroupInvitation(op.param1)                                                                              
+                            g1.acceptGroupInvitation(op.param1)                                                                                 
                             G = g1.getGroup(op.param1)
                             G.preventedJoinByTicket = False
                             g1.updateGroup(G)
@@ -1753,8 +1750,7 @@ def bot(op):
                             k9.acceptGroupInvitationByTicket(op.param1,Ticket)	
                             k10.acceptGroupInvitationByTicket(op.param1,Ticket)
                             bl["blacklist"][op.param2] = True
-                            g1.leaveGroup(op.param1)
-                            g2.leaveGroup(op.param1)                           
+                            g1.leaveGroup(op.param1)                           
                             cl.inviteIntoGroup(op.param1,[g1MID,g2MID])                                                  
                         except:
                             pass
@@ -1788,11 +1784,7 @@ def bot(op):
                             g1.inviteIntoGroup(op.param1,[g2MID])
                             g1.kickoutFromGroup(op.param1,[op.param2])
                         except:
-                            try:
-                                g2.inviteIntoGroup(op.param1,[g1MID])
-                                g2.kickoutFromGroup(op.param1,[op.param2])
-                            except:
-                                pass
+                            pass
                                
             try:
                 if op.param3 in owner:
@@ -1958,46 +1950,55 @@ def bot(op):
                         json.dump(bl, fp, sort_keys=True, indent=4)
                     try:                  	
                         k1.kickoutFromGroup(op.param1,[op.param2])
+			time.sleep(0.008)
                         k1.inviteIntoGroup(op.param1,[op.param3])
                         cl.acceptGroupInvitation(op.param1)
                     except:
                         try:
                             k2.kickoutFromGroup(op.param1,[op.param2])
+                            time.sleep(0.008)
                             k2.inviteIntoGroup(op.param1,[op.param3])
                             cl.acceptGroupInvitation(op.param1)
                         except:
                             try:
                                 k3.kickoutFromGroup(op.param1,[op.param2])
+				time.sleep(0.008)
                                 k3.inviteIntoGroup(op.param1,[op.param3])
                                 cl.acceptGroupInvitation(op.param1)
                             except:
                                 try:
                                     k4.kickoutFromGroup(op.param1,[op.param2])
+                                    time.sleep(0.008)
                                     k4.inviteIntoGroup(op.param1,[op.param3])
                                     cl.acceptGroupInvitation(op.param1)
                                 except:
                                     try:
                                         k5.kickoutFromGroup(op.param1,[op.param2])
+					time.sleep(0.008)
                                         k5.inviteIntoGroup(op.param1,[op.param3])
                                         cl.acceptGroupInvitation(op.param1)
                                     except:
                                         try:
                                             k6.kickoutFromGroup(op.param1,[op.param2])
+                                            time.sleep(0.008)
                                             k6.inviteIntoGroup(op.param1,[op.param3])
                                             cl.acceptGroupInvitation(op.param1)
                                         except:
                                             try:
                                                 k7.kickoutFromGroup(op.param1,[op.param2])
+						time.sleep(0.008)
                                                 k7.inviteIntoGroup(op.param1,[op.param3])
                                                 cl.acceptGroupInvitation(op.param1)
                                             except:
                                                 try:
                                                     k8.kickoutFromGroup(op.param1,[op.param2])
+                                                    time.sleep(0.008)
                                                     k8.inviteIntoGroup(op.param1,[op.param3])
                                                     cl.acceptGroupInvitation(op.param1)
                                                 except:
                                                     try:
                                                         k9.kickoutFromGroup(op.param1,[op.param2])
+						        time.sleep(0.008)
                                                         k9.inviteIntoGroup(op.param1,[op.param3])
                                                         cl.acceptGroupInvitation(op.param1)
                                                     except:
@@ -2008,7 +2009,6 @@ def bot(op):
                                                             invsend = 0
                                                             Ticket = random.choice(ABC).reissueGroupTicket(op.param1)
                                                             g1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            g2.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k1.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k2.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -2023,13 +2023,13 @@ def bot(op):
                                                             random.choice(KICKER).kickoutFromGroup(op.param1,[op.param2])
                                                             random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                             g1.leaveGroup(op.param1)
-                                                            g2.leaveGroup(op.param1)
                                                             X = random.choice(ABC).getGroup(op.param1)
                                                             X.preventedJoinByTicket = True
                                                             random.choice(ABC).updateGroup(X) 
                                                         except: 
                                                             try:
                                                                 k10.kickoutFromGroup(op.param1,[op.param2])
+								time.sleep(0.008)
                                                                 k10.inviteIntoGroup(op.param1,[op.param3])
                                                                 cl.acceptGroupInvitation(op.param1)
                                                             except:
@@ -2190,7 +2190,6 @@ def bot(op):
                                                             invsend = 0
                                                             Ticket = random.choice(ABC).reissueGroupTicket(op.param1)
                                                             g1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            g2.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k1.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k2.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -2205,7 +2204,6 @@ def bot(op):
                                                             random.choice(KICKER).kickoutFromGroup(op.param1,[op.param2])
                                                             random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                             g1.leaveGroup(op.param1)
-                                                            g2.leaveGroup(op.param1)
                                                             X = random.choice(ABC).getGroup(op.param1)
                                                             X.preventedJoinByTicket = True
                                                             random.choice(ABC).updateGroup(X) 
@@ -2374,7 +2372,6 @@ def bot(op):
                                                             invsend = 0
                                                             Ticket = random.choice(ABC).reissueGroupTicket(op.param1)
                                                             g1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            g2.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k1.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k2.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -2389,7 +2386,6 @@ def bot(op):
                                                             random.choice(KICKER).kickoutFromGroup(op.param1,[op.param2])
                                                             random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                             g1.leaveGroup(op.param1)
-                                                            g2.leaveGroup(op.param1)
                                                             X = random.choice(ABC).getGroup(op.param1)
                                                             X.preventedJoinByTicket = True
                                                             random.choice(ABC).updateGroup(X) 
@@ -2558,7 +2554,6 @@ def bot(op):
                                                             invsend = 0
                                                             Ticket = random.choice(ABC).reissueGroupTicket(op.param1)
                                                             g1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            g2.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k1.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k2.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -2573,7 +2568,6 @@ def bot(op):
                                                             random.choice(KICKER).kickoutFromGroup(op.param1,[op.param2])
                                                             random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                             g1.leaveGroup(op.param1)
-                                                            g2.leaveGroup(op.param1)
                                                             X = random.choice(ABC).getGroup(op.param1)
                                                             X.preventedJoinByTicket = True
                                                             random.choice(ABC).updateGroup(X) 
@@ -2741,7 +2735,6 @@ def bot(op):
                                                             invsend = 0
                                                             Ticket = random.choice(ABC).reissueGroupTicket(op.param1)
                                                             g1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            g2.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k1.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k2.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -2756,7 +2749,6 @@ def bot(op):
                                                             random.choice(KICKER).kickoutFromGroup(op.param1,[op.param2])
                                                             random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                             g1.leaveGroup(op.param1)
-                                                            g2.leaveGroup(op.param1)
                                                             X = random.choice(ABC).getGroup(op.param1)
                                                             X.preventedJoinByTicket = True
                                                             random.choice(ABC).updateGroup(X) 
@@ -2929,7 +2921,6 @@ def bot(op):
                                                             invsend = 0
                                                             Ticket = random.choice(ABC).reissueGroupTicket(op.param1)
                                                             g1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            g2.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k1.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k2.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -2944,7 +2935,6 @@ def bot(op):
                                                             random.choice(KICKER).kickoutFromGroup(op.param1,[op.param2])
                                                             random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                             g1.leaveGroup(op.param1)
-                                                            g2.leaveGroup(op.param1)
                                                             X = random.choice(ABC).getGroup(op.param1)
                                                             X.preventedJoinByTicket = True
                                                             random.choice(ABC).updateGroup(X) 
@@ -3117,7 +3107,6 @@ def bot(op):
                                                             invsend = 0
                                                             Ticket = random.choice(ABC).reissueGroupTicket(op.param1)
                                                             g1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            g2.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k1.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k2.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -3132,7 +3121,6 @@ def bot(op):
                                                             random.choice(KICKER).kickoutFromGroup(op.param1,[op.param2])
                                                             random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                             g1.leaveGroup(op.param1)
-                                                            g2.leaveGroup(op.param1)
                                                             X = random.choice(ABC).getGroup(op.param1)
                                                             X.preventedJoinByTicket = True
                                                             random.choice(ABC).updateGroup(X) 
@@ -3304,7 +3292,6 @@ def bot(op):
                                                             invsend = 0
                                                             Ticket = random.choice(ABC).reissueGroupTicket(op.param1)
                                                             g1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            g2.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k1.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k2.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -3319,7 +3306,6 @@ def bot(op):
                                                             random.choice(KICKER).kickoutFromGroup(op.param1,[op.param2])
                                                             random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                             g1.leaveGroup(op.param1)
-                                                            g2.leaveGroup(op.param1)
                                                             X = random.choice(ABC).getGroup(op.param1)
                                                             X.preventedJoinByTicket = True
                                                             random.choice(ABC).updateGroup(X) 
@@ -3491,7 +3477,6 @@ def bot(op):
                                                             invsend = 0
                                                             Ticket = random.choice(ABC).reissueGroupTicket(op.param1)
                                                             g1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            g2.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k1.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k2.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -3506,7 +3491,6 @@ def bot(op):
                                                             random.choice(KICKER).kickoutFromGroup(op.param1,[op.param2])
                                                             random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                             g1.leaveGroup(op.param1)
-                                                            g2.leaveGroup(op.param1)
                                                             X = random.choice(ABC).getGroup(op.param1)
                                                             X.preventedJoinByTicket = True
                                                             random.choice(ABC).updateGroup(X) 
@@ -3679,7 +3663,6 @@ def bot(op):
                                                             invsend = 0
                                                             Ticket = random.choice(ABC).reissueGroupTicket(op.param1)
                                                             g1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            g2.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k1.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k2.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -3694,7 +3677,6 @@ def bot(op):
                                                             random.choice(KICKER).kickoutFromGroup(op.param1,[op.param2])
                                                             random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                             g1.leaveGroup(op.param1)
-                                                            g2.leaveGroup(op.param1)
                                                             X = random.choice(ABC).getGroup(op.param1)
                                                             X.preventedJoinByTicket = True
                                                             random.choice(ABC).updateGroup(X) 
@@ -3867,7 +3849,6 @@ def bot(op):
                                                             invsend = 0
                                                             Ticket = random.choice(ABC).reissueGroupTicket(op.param1)
                                                             g1.acceptGroupInvitationByTicket(op.param1,Ticket)
-                                                            g2.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             cl.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k1.acceptGroupInvitationByTicket(op.param1,Ticket)
                                                             k2.acceptGroupInvitationByTicket(op.param1,Ticket)
@@ -3882,7 +3863,6 @@ def bot(op):
                                                             random.choice(KICKER).kickoutFromGroup(op.param1,[op.param2])
                                                             random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                                                             g1.leaveGroup(op.param1)
-                                                            g2.leaveGroup(op.param1)
                                                             X = random.choice(ABC).getGroup(op.param1)
                                                             X.preventedJoinByTicket = True
                                                             random.choice(ABC).updateGroup(X) 
@@ -4591,8 +4571,7 @@ def bot(op):
                      path8 = k8.downloadObjectMsg(msg_id)
                      path9 = k9.downloadObjectMsg(msg_id)
                      path10 = k10.downloadObjectMsg(msg_id)
-                     path11 = g1.downloadObjectMsg(msg_id)
-                     path12 = g2.downloadObjectMsg(msg_id)             
+                     path11 = g1.downloadObjectMsg(msg_id)            
                      settings["changePicture"] = False
                      k1.updateProfilePicture(path1)
                      k1.sendMessage(msg.to, "ᴀsɪsᴛ 1 ʙᴇʀʜᴀsɪʟ ᴜᴘᴅᴀᴛᴇ ғᴏᴛᴏ")
@@ -4616,8 +4595,6 @@ def bot(op):
                      k10.sendMessage(msg.to, "ᴀsɪsᴛ 10 ʙᴇʀʜᴀsɪʟ ᴜᴘᴅᴀᴛᴇ ғᴏᴛᴏ")
                      g1.updateProfilePicture(path11)
                      g1.sendMessage(msg.to, "ʜᴀɴᴛᴜ 1 ʙᴇʀʜᴀsɪʟ ᴜᴘᴅᴀᴛᴇ ғᴏᴛᴏ")
-                     g2.updateProfilePicture(path12)
-                     g2.sendMessage(msg.to, "ʜᴀɴᴛᴜ 2 ʙᴇʀʜᴀsɪʟ ᴜᴘᴅᴀᴛᴇ ғᴏᴛᴏ")
                      
 
                if msg.contentType == 0:
@@ -4764,8 +4741,7 @@ def bot(op):
                                 cl.findAndAddContactsByMid(Hmid)
                                 cl.findAndAddContactsByMid(Imid)
                                 cl.findAndAddContactsByMid(Jmid)
-                                cl.findAndAddContactsByMid(g1MID)
-                                cl.findAndAddContactsByMid(g2MID)                                                          
+                                cl.findAndAddContactsByMid(g1MID)                                                         
                                 k1.findAndAddContactsByMid(mid)                                                               
                                 k1.findAndAddContactsByMid(Cmid)
                                 k1.findAndAddContactsByMid(Dmid)
@@ -4776,7 +4752,6 @@ def bot(op):
                                 k1.findAndAddContactsByMid(Imid)
                                 k1.findAndAddContactsByMid(Jmid)
                                 k1.findAndAddContactsByMid(g1MID)
-                                k1.findAndAddContactsByMid(g2MID) 
                                 k2.findAndAddContactsByMid(mid)                                                             
                                 k2.findAndAddContactsByMid(Bmid)
                                 k2.findAndAddContactsByMid(Dmid)
@@ -4787,7 +4762,6 @@ def bot(op):
                                 k2.findAndAddContactsByMid(Imid)
                                 k2.findAndAddContactsByMid(Jmid)
                                 k2.findAndAddContactsByMid(g1MID)
-                                k2.findAndAddContactsByMid(g2MID)
                                 k3.findAndAddContactsByMid(mid)                                
                                 k3.findAndAddContactsByMid(Bmid)                              
                                 k3.findAndAddContactsByMid(Dmid)
@@ -4798,7 +4772,6 @@ def bot(op):
                                 k3.findAndAddContactsByMid(Imid)
                                 k3.findAndAddContactsByMid(Jmid)
                                 k3.findAndAddContactsByMid(g1MID)
-                                k3.findAndAddContactsByMid(g2MID) 
                                 k4.findAndAddContactsByMid(mid)                                
                                 k4.findAndAddContactsByMid(Bmid)
                                 k4.findAndAddContactsByMid(Cmid)                                
@@ -4809,7 +4782,6 @@ def bot(op):
                                 k4.findAndAddContactsByMid(Imid)
                                 k4.findAndAddContactsByMid(Jmid)
                                 k4.findAndAddContactsByMid(g1MID)
-                                k4.findAndAddContactsByMid(g2MID) 
                                 k5.findAndAddContactsByMid(mid)                                
                                 k5.findAndAddContactsByMid(Bmid)
                                 k5.findAndAddContactsByMid(Cmid)
@@ -4820,7 +4792,6 @@ def bot(op):
                                 k5.findAndAddContactsByMid(Imid)
                                 k5.findAndAddContactsByMid(Jmid)
                                 k5.findAndAddContactsByMid(g1MID)
-                                k5.findAndAddContactsByMid(g2MID) 
                                 k6.findAndAddContactsByMid(mid)                                
                                 k6.findAndAddContactsByMid(Bmid)
                                 k6.findAndAddContactsByMid(Cmid)
@@ -4832,7 +4803,6 @@ def bot(op):
                                 k6.findAndAddContactsByMid(Imid)
                                 k6.findAndAddContactsByMid(Jmid)
                                 k6.findAndAddContactsByMid(g1MID)
-                                k6.findAndAddContactsByMid(g2MID)
                                 k7.findAndAddContactsByMid(mid)                                
                                 k7.findAndAddContactsByMid(Bmid)
                                 k7.findAndAddContactsByMid(Cmid)
@@ -4844,7 +4814,6 @@ def bot(op):
                                 k7.findAndAddContactsByMid(Imid)
                                 k7.findAndAddContactsByMid(Jmid)
                                 k7.findAndAddContactsByMid(g1MID)
-                                k7.findAndAddContactsByMid(g2MID) 
                                 k8.findAndAddContactsByMid(mid)                                
                                 k8.findAndAddContactsByMid(Bmid)
                                 k8.findAndAddContactsByMid(Cmid)
@@ -4856,7 +4825,6 @@ def bot(op):
                                 k8.findAndAddContactsByMid(Imid)
                                 k8.findAndAddContactsByMid(Jmid)
                                 k8.findAndAddContactsByMid(g1MID)
-                                k8.findAndAddContactsByMid(g2MID) 
                                 k9.findAndAddContactsByMid(mid)                                
                                 k9.findAndAddContactsByMid(Bmid)
                                 k9.findAndAddContactsByMid(Cmid)
@@ -4867,8 +4835,7 @@ def bot(op):
                                 k9.findAndAddContactsByMid(Hmid)                                
                                 k9.findAndAddContactsByMid(Imid)
                                 k9.findAndAddContactsByMid(Jmid)
-                                k9.findAndAddContactsByMid(g1MID)
-                                k9.findAndAddContactsByMid(g2MID) 
+                                k9.findAndAddContactsByMid(g1MID) 
                                 k10.findAndAddContactsByMid(mid)                                
                                 k10.findAndAddContactsByMid(Bmid)
                                 k10.findAndAddContactsByMid(Cmid)
@@ -4880,7 +4847,6 @@ def bot(op):
                                 k10.findAndAddContactsByMid(Imid)
                                 k10.findAndAddContactsByMid(Jmid)
                                 k10.findAndAddContactsByMid(g1MID)
-                                k10.findAndAddContactsByMid(g2MID) 
                                 g1.findAndAddContactsByMid(mid)                                
                                 g1.findAndAddContactsByMid(Bmid)
                                 g1.findAndAddContactsByMid(Cmid)
@@ -4890,20 +4856,7 @@ def bot(op):
                                 g1.findAndAddContactsByMid(Gmid)
                                 g1.findAndAddContactsByMid(Hmid)                                
                                 g1.findAndAddContactsByMid(Imid)
-                                g1.findAndAddContactsByMid(Jmid)                                
-                                g1.findAndAddContactsByMid(g2MID) 
-                                g2.findAndAddContactsByMid(mid)                                
-                                g2.findAndAddContactsByMid(Bmid)
-                                g2.findAndAddContactsByMid(Cmid)
-                                g2.findAndAddContactsByMid(Dmid)
-                                g2.findAndAddContactsByMid(Emid)
-                                g2.findAndAddContactsByMid(Fmid)                                                              
-                                g2.findAndAddContactsByMid(Gmid)
-                                g2.findAndAddContactsByMid(Hmid)                                
-                                g2.findAndAddContactsByMid(Imid)
-                                g2.findAndAddContactsByMid(Jmid)
-                                g2.findAndAddContactsByMid(g1MID)
-                                g2.findAndAddContactsByMid(g2MID)                                                               
+                                g1.findAndAddContactsByMid(Jmid)                                                                                   
                                 cl.sendMessage(to,"Sucsess!!!")
                             except:
                                 cl.sendMessage(to,"Sucess! add all bots...Ok")
@@ -4922,7 +4875,6 @@ def bot(op):
                               cl.sendContact(to, Imid)
                               cl.sendContact(to, Jmid)
                               cl.sendContact(to, g1MID)
-                              cl.sendContact(to, g2MID)
                               
                         elif cmd  == "midbot":
                           if msg._from in admin:
@@ -5383,12 +5335,12 @@ def bot(op):
                                 g2.updateProfile(profile)
                                 g2.sendMessage(msg.to,"Nama diganti jadi " + string + "")                    
 #===========BOT UPDATE============#
-                        elif cmd == "mention" or text.lower() == 'tes':
+                        elif cmd == "tag" or text.lower() == 'แทค':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                group = cl.getGroup(msg.to)
                                nama = [contact.mid for contact in group.members]
-                               nm1, nm2, nm3, nm4,nm5,nm6,nm7, jml = [], [], [], [],[], [], [], len(nama)
+                               nm1, nm2, nm3, nm4,nm5,nm6,nm7,nm8,nm9,nm10,nm11,nm12,nm13,nm14,nm15, jml = [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], len(nama)
                                if jml <= 20:
                                    mentionMembers(msg.to, nama)
                                if jml > 20 and jml < 40:
@@ -5503,6 +5455,341 @@ def bot(op):
                                    for p in range (140, len(nama)-1):
                                        nm8 += [nama[p]]
                                    mentionMembers(msg.to, nm8)
+                               if jml > 160 and jml < 180:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (150, 159):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                                   for q in range (160, len(nama)-1):
+                                       nm8 += [nama[q]]                                       
+                                   mentionMembers(msg.to, nm9)
+                               if jml > 160 and jml < 180:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (140, 159):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                                   for q in range (160, 179):
+                                       nm9 += [nama[q]]
+                                   mentionMembers(msg.to, nm9)
+                                   for r in range (180, len(nama)-1):
+                                       nm10 += [nama[r]]
+                                   mentionMembers(msg.to, nm10)
+                               if jml > 180 and jml < 200:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (140, 159):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                                   for q in range (160, 179):
+                                       nm9 += [nama[q]]
+                                   mentionMembers(msg.to, nm9)
+                                   for r in range (180, 199):
+                                       nm10 += [nama[r]]
+                                   mentionMembers(msg.to, nm10)
+                                   for s in range (200, len(nama)-1):
+                                       nm11 += [nama[s]]
+                                   mentionMembers(msg.to, nm11)
+                               if jml > 200 and jml < 220:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (140, 159):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                                   for q in range (160, 179):
+                                       nm9 += [nama[q]]
+                                   mentionMembers(msg.to, nm9)
+                                   for r in range (180, 199):
+                                       nm10 += [nama[r]]
+                                   mentionMembers(msg.to, nm10)
+                                   for s in range (200, 219):
+                                       nm11 += [nama[s]]
+                                   mentionMembers(msg.to, nm11)
+                                   for t in range (220, len(nama)-1):
+                                       nm12 += [nama[t]]
+                                   mentionMembers(msg.to, nm12)
+                               if jml > 220 and jml < 239:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (140, 159):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                                   for q in range (160, 179):
+                                       nm9 += [nama[q]]
+                                   mentionMembers(msg.to, nm9)
+                                   for r in range (180, 199):
+                                       nm10 += [nama[r]]
+                                   mentionMembers(msg.to, nm10)
+                                   for s in range (200, 219):
+                                       nm11 += [nama[s]]
+                                   mentionMembers(msg.to, nm11)
+                                   for t in range (220, 239):
+                                       nm12 += [nama[t]]
+                                   mentionMembers(msg.to, nm12)
+                                   for u in range (240, len(nama)-1):
+                                       nm13 += [nama[u]]
+                                   mentionMembers(msg.to, nm13)
+                               if jml > 240 and jml < 259:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (140, 159):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                                   for q in range (160, 179):
+                                       nm9 += [nama[q]]
+                                   mentionMembers(msg.to, nm9)
+                                   for r in range (180, 199):
+                                       nm10 += [nama[r]]
+                                   mentionMembers(msg.to, nm10)
+                                   for s in range (200, 219):
+                                       nm11 += [nama[s]]
+                                   mentionMembers(msg.to, nm11)
+                                   for t in range (220, 239):
+                                       nm12 += [nama[t]]
+                                   mentionMembers(msg.to, nm12)
+                                   for u in range (240, 259):
+                                       nm13 += [nama[u]]
+                                   mentionMembers(msg.to, nm13)
+                                   for v in range (260, len(nama)-1):
+                                       nm14 += [nama[v]]
+                                   mentionMembers(msg.to, nm14)
+                               if jml > 260 and jml < 279:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (140, 159):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                                   for q in range (160, 179):
+                                       nm9 += [nama[q]]
+                                   mentionMembers(msg.to, nm9)
+                                   for r in range (180, 199):
+                                       nm10 += [nama[r]]
+                                   mentionMembers(msg.to, nm10)
+                                   for s in range (200, 219):
+                                       nm11 += [nama[s]]
+                                   mentionMembers(msg.to, nm11)
+                                   for t in range (220, 239):
+                                       nm12 += [nama[t]]
+                                   mentionMembers(msg.to, nm12)
+                                   for u in range (240, 259):
+                                       nm13 += [nama[u]]
+                                   mentionMembers(msg.to, nm13)
+                                   for v in range (260, 279):
+                                       nm14 += [nama[v]]
+                                   mentionMembers(msg.to, nm14)
+                                   for w in range (280, len(nama)-1):
+                                       nm15 += [nama[w]]
+                                   mentionMembers(msg.to, nm15)
+                               if jml > 280 and jml < 299:
+                                   for i in range (0, 19):
+                                       nm1 += [nama[i]]
+                                   mentionMembers(msg.to, nm1)
+                                   for j in range (20, 39):
+                                       nm2 += [nama[j]]
+                                   mentionMembers(msg.to, nm2)
+                                   for k in range (40, 59):
+                                       nm3 += [nama[k]]
+                                   mentionMembers(msg.to, nm3)
+                                   for l in range (60, 79):
+                                       nm4 += [nama[l]]
+                                   mentionMembers(msg.to, nm4)
+                                   for m in range (80, 99):
+                                       nm5 += [nama[m]]
+                                   mentionMembers(msg.to, nm5)
+                                   for n in range (100, 119):
+                                       nm6 += [nama[n]]
+                                   mentionMembers(msg.to, nm6)
+                                   for o in range (120, 139):
+                                       nm7 += [nama[o]]
+                                   mentionMembers(msg.to, nm7)
+                                   for p in range (140, 159):
+                                       nm8 += [nama[p]]
+                                   mentionMembers(msg.to, nm8)
+                                   for q in range (160, 179):
+                                       nm9 += [nama[q]]
+                                   mentionMembers(msg.to, nm9)
+                                   for r in range (180, 199):
+                                       nm10 += [nama[r]]
+                                   mentionMembers(msg.to, nm10)
+                                   for s in range (200, 219):
+                                       nm11 += [nama[s]]
+                                   mentionMembers(msg.to, nm11)
+                                   for t in range (220, 239):
+                                       nm12 += [nama[t]]
+                                   mentionMembers(msg.to, nm12)
+                                   for u in range (240, 259):
+                                       nm13 += [nama[u]]
+                                   mentionMembers(msg.to, nm13)
+                                   for v in range (260, 279):
+                                       nm14 += [nama[v]]
+                                   mentionMembers(msg.to, nm14)
+                                   for w in range (280, 299):
+                                       nm15 += [nama[w]]
+                                   mentionMembers(msg.to, nm15)
+                                   for x in range (300, len(nama)-1):
+                                       nm16 += [nama[x]]
+                                   mentionMembers(msg.to, nm16)
+
+                        elif text.lower() == "ลบแชทคิก":
+                          if wait["selfbot"] == True:
+                            if msg._from in admin:
+                               try:
+                                   k1.removeAllMessages(op.param2)
+                                   k2.removeAllMessages(op.param2)
+                                   k3.removeAllMessages(op.param2)
+                                   k4.removeAllMessages(op.param2)
+                                   k5.removeAllMessages(op.param2)
+                                   k6.removeAllMessages(op.param2)
+                                   k7.removeAllMessages(op.param2)
+                                   k8.removeAllMessages(op.param2)
+                                   k9.removeAllMessages(op.param2)
+                                   k10.removeAllMessages(op.param2)
+                                   k1.sendText(msg.to,"Chat dibersihkan...")
+                                   k2.sendText(msg.to,"Chat dibersihkan...")
+                                   k3.sendText(msg.to,"Chat dibersihkan...")
+                                   k4.sendText(msg.to,"Chat dibersihkan...")
+                                   k5.sendText(msg.to,"Chat dibersihkan...")
+                                   k6.sendText(msg.to,"Chat dibersihkan...")
+                                   k7.sendText(msg.to,"Chat dibersihkan...")
+                                   k8.sendText(msg.to,"Chat dibersihkan...")
+                                   k9.sendText(msg.to,"Chat dibersihkan...")
+                                   k10.sendText(msg.to,"Chat dibersihkan...")
+                               except:
+                                   pass
                         elif cmd == "ชื่อบอท":
                           if wait["selfbot"] == True:
                             if msg._from in owner or msg._from in admin or msg._from in staff:
@@ -5633,7 +5920,8 @@ def bot(op):
                                k9.acceptGroupInvitationByTicket(to,format(str(ticket)))
                                time.sleep(0.01)
                                k10.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                               time.sleep(0.01)                               
+                               time.sleep(0.01)
+                               k10.sendMessage(msg.to, "พร้อมคุ้มกันเจ้านายค่ะ"
                         
                         elif cmd == "ดึงคิก":
                           if wait["selfbot"] == True:
@@ -5748,15 +6036,12 @@ def bot(op):
                                ticket = cl.reissueGroupTicket(to)
                                g1.acceptGroupInvitationByTicket(to,format(str(ticket)))
                                time.sleep(0.01)
-                               g2.acceptGroupInvitationByTicket(to,format(str(ticket)))
-                               time.sleep(0.01)
                                
                         elif cmd == "ผีออก":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
                                 g1.leaveGroup(msg.to)
-                                g2.leaveGroup(msg.to)
                                 
                         elif cmd == "/bye":
                           if wait["selfbot"] == True:
@@ -5847,15 +6132,6 @@ def bot(op):
                                 try:
                                     ginfo = cl.getGroup(msg.to)
                                     cl.inviteIntoGroup(msg.to, [g1MID])
-                                    cl.sendMessage(msg.to,"Succes invite di"+str(ginfo.name)+" Siap Stay")
-                                except:
-                                    pass
-                        elif cmd == "g2":
-                          if wait["selfbot"] == True:
-                            if msg._from in admin:
-                                try:
-                                    ginfo = cl.getGroup(msg.to)
-                                    cl.inviteIntoGroup(msg.to, [g2MID])
                                     cl.sendMessage(msg.to,"Succes invite di"+str(ginfo.name)+" Siap Stay")
                                 except:
                                     pass
