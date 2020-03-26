@@ -25,10 +25,10 @@ print("""
 cl = LINE('EPHBYYIzIjfugMkd0HD5.XM5fib0weUTm57oOA6XgHq.tL1PwEcI2w9XxV9anAfZ910upIx9ZWZmHzCEqzfNpEE=')
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Selfbot Login ]\033[0m"""%(Bot_startTime))
 
-k1 = LINE('EPfgg0Orb9s0b2FKga5d.OOGBDbk28/vRvRBltcdSxq.Pk8mEyNx1A10bxhVWGKxEdVitVT4qf5taGLE96FGcJk=')
+k1 = LINE('EPUpJp1hMLmwSUgYbv90.4LP3g3M4PTJ93JoSjIyEya.4XtoFiJHGaKV0zzJxRxNbeHamZjVvs6c8YDzYIt5P/g=')
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist1 Login ]\033[0m"""%(Bot_startTime))
 
-k2 = LINE('EPs77MC63bLuKJ3lWLT5.X6Ct4bnONi5o6d0PILEMDq.hvInZT83Fk4ZwkXITrrbXKqGfFC9+i5hdC+2gGBQSnQ=')
+k2 = LINE('EP3VcGQv6hsDQYhEKpm4.+UzMuT7p6moCZl9Y8fjbva.qhAPFwgPJ9wlieIIk/twdv0pQITceDhpSL28CpYf3ck=')
 print("""\033["""+str(randint(0,1))+""";"""+str(randint(31,36))+"""m[ %s Asist2 Login ]\033[0m"""%(Bot_startTime))
 
 k3 = LINE('EP1cLaynuY66Oy7t11E9.c88JeXWtK6LfwQarKQ7kYq.afRSX6UUfQqksMqxMAfraGaRRNdO2srNC7z01yfxLXA=')
